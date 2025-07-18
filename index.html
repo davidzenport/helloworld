@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello Widget</title>
+  <title>Add Lead Source</title>
+  <!-- Zoho CRM Widget SDK -->
+  <script src="https://js.zohostatic.com/zoho-crm-sdk/2.0.0/sdk.js"></script>
+  <script src="script.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 32px; }
+    #statusMsg { margin-top: 15px; color: #cc0000; }
+    input[type="text"] { width: 90%; padding: 4px; }
+    button { padding: 6px 14px; font-size: 1em; }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <h2>Add Lead Source</h2>
+  <label for="leadSourceInput"><b>Enter New Lead Source:</b></label><br>
+  <input type="text" id="leadSourceInput" /><br><br>
+  <button id="submitBtn">Submit</button>
+  <div id="statusMsg"></div>
 </body>
 </html>
